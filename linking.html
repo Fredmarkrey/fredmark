@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Are you Gay?</title>
+<link rel="stylesheet" href="style.css"> 
+<script>
+   const noButton = document.getElementById("no");
+
+noButton.addEventListener("mousemove", () => {
+    const maxX = window.innerWidth - noButton.offsetWidth;
+    const maxY = window.innerHeight - noButton.offsetHeight;
+
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
+
+    noButton.style.position = "absolute";
+    noButton.style.left = randomX + "px";
+    noButton.style.top = randomY + "px";
+});
+</script>
+</head>
+<body>
+<button id="YES"></button>YES</button>
+<button id="NO"></button>NO</button>
+<script scr="script.js"></script>
+</body>
+</html>
